@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		291ED9FB2C4EA7ED007B6A79 /* PokeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */; };
+		291ED9FD2C4EA7ED007B6A79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */; };
+		291ED9FF2C4EA7ED007B6A79 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FE2C4EA7ED007B6A79 /* Item.swift */; };
+		291EDA012C4EA7EE007B6A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291EDA002C4EA7EE007B6A79 /* Assets.xcassets */; };
+		291EDA052C4EA7EE007B6A79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291EDA042C4EA7EE007B6A79 /* Preview Assets.xcassets */; };
+		291EDA0F2C4EA7EE007B6A79 /* PokeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA0E2C4EA7EE007B6A79 /* PokeyTests.swift */; };
+		291EDA192C4EA7EE007B6A79 /* PokeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA182C4EA7EE007B6A79 /* PokeyUITests.swift */; };
+		291EDA1B2C4EA7EE007B6A79 /* PokeyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA1A2C4EA7EE007B6A79 /* PokeyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		291EDA0B2C4EA7EE007B6A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 291ED9EF2C4EA7ED007B6A79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 291ED9F62C4EA7ED007B6A79;
+			remoteInfo = Pokey;
+		};
+		291EDA152C4EA7EE007B6A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 291ED9EF2C4EA7ED007B6A79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 291ED9F62C4EA7ED007B6A79;
+			remoteInfo = Pokey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		291ED9F72C4EA7ED007B6A79 /* Pokey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyApp.swift; sourceTree = "<group>"; };
+		291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		291ED9FE2C4EA7ED007B6A79 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		291EDA002C4EA7EE007B6A79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		291EDA022C4EA7EE007B6A79 /* Pokey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pokey.entitlements; sourceTree = "<group>"; };
+		291EDA042C4EA7EE007B6A79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		291EDA0A2C4EA7EE007B6A79 /* PokeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		291EDA0E2C4EA7EE007B6A79 /* PokeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyTests.swift; sourceTree = "<group>"; };
+		291EDA142C4EA7EE007B6A79 /* PokeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		291EDA182C4EA7EE007B6A79 /* PokeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyUITests.swift; sourceTree = "<group>"; };
+		291EDA1A2C4EA7EE007B6A79 /* PokeyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		291ED9F42C4EA7ED007B6A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA072C4EA7EE007B6A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA112C4EA7EE007B6A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		291ED9EE2C4EA7ED007B6A79 = {
+			isa = PBXGroup;
+			children = (
+				291ED9F92C4EA7ED007B6A79 /* Pokey */,
+				291EDA0D2C4EA7EE007B6A79 /* PokeyTests */,
+				291EDA172C4EA7EE007B6A79 /* PokeyUITests */,
+				291ED9F82C4EA7ED007B6A79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		291ED9F82C4EA7ED007B6A79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				291ED9F72C4EA7ED007B6A79 /* Pokey.app */,
+				291EDA0A2C4EA7EE007B6A79 /* PokeyTests.xctest */,
+				291EDA142C4EA7EE007B6A79 /* PokeyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		291ED9F92C4EA7ED007B6A79 /* Pokey */ = {
+			isa = PBXGroup;
+			children = (
+				291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */,
+				291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */,
+				291ED9FE2C4EA7ED007B6A79 /* Item.swift */,
+				291EDA002C4EA7EE007B6A79 /* Assets.xcassets */,
+				291EDA022C4EA7EE007B6A79 /* Pokey.entitlements */,
+				291EDA032C4EA7EE007B6A79 /* Preview Content */,
+			);
+			path = Pokey;
+			sourceTree = "<group>";
+		};
+		291EDA032C4EA7EE007B6A79 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA042C4EA7EE007B6A79 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		291EDA0D2C4EA7EE007B6A79 /* PokeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA0E2C4EA7EE007B6A79 /* PokeyTests.swift */,
+			);
+			path = PokeyTests;
+			sourceTree = "<group>";
+		};
+		291EDA172C4EA7EE007B6A79 /* PokeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA182C4EA7EE007B6A79 /* PokeyUITests.swift */,
+				291EDA1A2C4EA7EE007B6A79 /* PokeyUITestsLaunchTests.swift */,
+			);
+			path = PokeyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		291ED9F62C4EA7ED007B6A79 /* Pokey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291EDA1E2C4EA7EE007B6A79 /* Build configuration list for PBXNativeTarget "Pokey" */;
+			buildPhases = (
+				291ED9F32C4EA7ED007B6A79 /* Sources */,
+				291ED9F42C4EA7ED007B6A79 /* Frameworks */,
+				291ED9F52C4EA7ED007B6A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pokey;
+			productName = Pokey;
+			productReference = 291ED9F72C4EA7ED007B6A79 /* Pokey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		291EDA092C4EA7EE007B6A79 /* PokeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291EDA212C4EA7EE007B6A79 /* Build configuration list for PBXNativeTarget "PokeyTests" */;
+			buildPhases = (
+				291EDA062C4EA7EE007B6A79 /* Sources */,
+				291EDA072C4EA7EE007B6A79 /* Frameworks */,
+				291EDA082C4EA7EE007B6A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				291EDA0C2C4EA7EE007B6A79 /* PBXTargetDependency */,
+			);
+			name = PokeyTests;
+			productName = PokeyTests;
+			productReference = 291EDA0A2C4EA7EE007B6A79 /* PokeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		291EDA132C4EA7EE007B6A79 /* PokeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291EDA242C4EA7EE007B6A79 /* Build configuration list for PBXNativeTarget "PokeyUITests" */;
+			buildPhases = (
+				291EDA102C4EA7EE007B6A79 /* Sources */,
+				291EDA112C4EA7EE007B6A79 /* Frameworks */,
+				291EDA122C4EA7EE007B6A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				291EDA162C4EA7EE007B6A79 /* PBXTargetDependency */,
+			);
+			name = PokeyUITests;
+			productName = PokeyUITests;
+			productReference = 291EDA142C4EA7EE007B6A79 /* PokeyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		291ED9EF2C4EA7ED007B6A79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					291ED9F62C4EA7ED007B6A79 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					291EDA092C4EA7EE007B6A79 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 291ED9F62C4EA7ED007B6A79;
+					};
+					291EDA132C4EA7EE007B6A79 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 291ED9F62C4EA7ED007B6A79;
+					};
+				};
+			};
+			buildConfigurationList = 291ED9F22C4EA7ED007B6A79 /* Build configuration list for PBXProject "Pokey" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 291ED9EE2C4EA7ED007B6A79;
+			productRefGroup = 291ED9F82C4EA7ED007B6A79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				291ED9F62C4EA7ED007B6A79 /* Pokey */,
+				291EDA092C4EA7EE007B6A79 /* PokeyTests */,
+				291EDA132C4EA7EE007B6A79 /* PokeyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		291ED9F52C4EA7ED007B6A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291EDA052C4EA7EE007B6A79 /* Preview Assets.xcassets in Resources */,
+				291EDA012C4EA7EE007B6A79 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA082C4EA7EE007B6A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA122C4EA7EE007B6A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		291ED9F32C4EA7ED007B6A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291ED9FD2C4EA7ED007B6A79 /* ContentView.swift in Sources */,
+				291ED9FF2C4EA7ED007B6A79 /* Item.swift in Sources */,
+				291ED9FB2C4EA7ED007B6A79 /* PokeyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA062C4EA7EE007B6A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291EDA0F2C4EA7EE007B6A79 /* PokeyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA102C4EA7EE007B6A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291EDA192C4EA7EE007B6A79 /* PokeyUITests.swift in Sources */,
+				291EDA1B2C4EA7EE007B6A79 /* PokeyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		291EDA0C2C4EA7EE007B6A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 291ED9F62C4EA7ED007B6A79 /* Pokey */;
+			targetProxy = 291EDA0B2C4EA7EE007B6A79 /* PBXContainerItemProxy */;
+		};
+		291EDA162C4EA7EE007B6A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 291ED9F62C4EA7ED007B6A79 /* Pokey */;
+			targetProxy = 291EDA152C4EA7EE007B6A79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		291EDA1C2C4EA7EE007B6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		291EDA1D2C4EA7EE007B6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		291EDA1F2C4EA7EE007B6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pokey/Pokey.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pokey/Preview Content\"";
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glnygl.Pokey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		291EDA202C4EA7EE007B6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pokey/Pokey.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pokey/Preview Content\"";
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glnygl.Pokey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		291EDA222C4EA7EE007B6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glnygl.PokeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pokey";
+			};
+			name = Debug;
+		};
+		291EDA232C4EA7EE007B6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glnygl.PokeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokey.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pokey";
+			};
+			name = Release;
+		};
+		291EDA252C4EA7EE007B6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glnygl.PokeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pokey;
+			};
+			name = Debug;
+		};
+		291EDA262C4EA7EE007B6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glnygl.PokeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pokey;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		291ED9F22C4EA7ED007B6A79 /* Build configuration list for PBXProject "Pokey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291EDA1C2C4EA7EE007B6A79 /* Debug */,
+				291EDA1D2C4EA7EE007B6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		291EDA1E2C4EA7EE007B6A79 /* Build configuration list for PBXNativeTarget "Pokey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291EDA1F2C4EA7EE007B6A79 /* Debug */,
+				291EDA202C4EA7EE007B6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		291EDA212C4EA7EE007B6A79 /* Build configuration list for PBXNativeTarget "PokeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291EDA222C4EA7EE007B6A79 /* Debug */,
+				291EDA232C4EA7EE007B6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		291EDA242C4EA7EE007B6A79 /* Build configuration list for PBXNativeTarget "PokeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291EDA252C4EA7EE007B6A79 /* Debug */,
+				291EDA262C4EA7EE007B6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 291ED9EF2C4EA7ED007B6A79 /* Project object */;
+}
