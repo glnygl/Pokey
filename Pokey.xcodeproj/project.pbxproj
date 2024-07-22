@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		291ED9FB2C4EA7ED007B6A79 /* PokeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */; };
 		291ED9FD2C4EA7ED007B6A79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */; };
-		291ED9FF2C4EA7ED007B6A79 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FE2C4EA7ED007B6A79 /* Item.swift */; };
+		291ED9FF2C4EA7ED007B6A79 /* PokeyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FE2C4EA7ED007B6A79 /* PokeyItem.swift */; };
 		291EDA012C4EA7EE007B6A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291EDA002C4EA7EE007B6A79 /* Assets.xcassets */; };
 		291EDA052C4EA7EE007B6A79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291EDA042C4EA7EE007B6A79 /* Preview Assets.xcassets */; };
 		291EDA0F2C4EA7EE007B6A79 /* PokeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA0E2C4EA7EE007B6A79 /* PokeyTests.swift */; };
 		291EDA192C4EA7EE007B6A79 /* PokeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA182C4EA7EE007B6A79 /* PokeyUITests.swift */; };
 		291EDA1B2C4EA7EE007B6A79 /* PokeyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA1A2C4EA7EE007B6A79 /* PokeyUITestsLaunchTests.swift */; };
+		291EDA2E2C4EA97F007B6A79 /* PokeyWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA2D2C4EA97F007B6A79 /* PokeyWatchApp.swift */; };
+		291EDA302C4EA97F007B6A79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA2F2C4EA97F007B6A79 /* ContentView.swift */; };
+		291EDA322C4EA980007B6A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291EDA312C4EA980007B6A79 /* Assets.xcassets */; };
+		291EDA352C4EA980007B6A79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291EDA342C4EA980007B6A79 /* Preview Assets.xcassets */; };
+		291EDA3F2C4EA980007B6A79 /* PokeyWatch_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA3E2C4EA980007B6A79 /* PokeyWatch_Watch_AppTests.swift */; };
+		291EDA492C4EA980007B6A79 /* PokeyWatch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA482C4EA980007B6A79 /* PokeyWatch_Watch_AppUITests.swift */; };
+		291EDA4B2C4EA980007B6A79 /* PokeyWatch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA4A2C4EA980007B6A79 /* PokeyWatch_Watch_AppUITestsLaunchTests.swift */; };
+		291EDA4E2C4EA980007B6A79 /* PokeyWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 291EDA2B2C4EA97F007B6A79 /* PokeyWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +40,48 @@
 			remoteGlobalIDString = 291ED9F62C4EA7ED007B6A79;
 			remoteInfo = Pokey;
 		};
+		291EDA3B2C4EA980007B6A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 291ED9EF2C4EA7ED007B6A79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 291EDA2A2C4EA97F007B6A79;
+			remoteInfo = "PokeyWatch Watch App";
+		};
+		291EDA452C4EA980007B6A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 291ED9EF2C4EA7ED007B6A79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 291EDA2A2C4EA97F007B6A79;
+			remoteInfo = "PokeyWatch Watch App";
+		};
+		291EDA4C2C4EA980007B6A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 291ED9EF2C4EA7ED007B6A79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 291EDA2A2C4EA97F007B6A79;
+			remoteInfo = "PokeyWatch Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		291EDA522C4EA980007B6A79 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				291EDA4E2C4EA980007B6A79 /* PokeyWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		291ED9F72C4EA7ED007B6A79 /* Pokey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyApp.swift; sourceTree = "<group>"; };
 		291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		291ED9FE2C4EA7ED007B6A79 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		291ED9FE2C4EA7ED007B6A79 /* PokeyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyItem.swift; sourceTree = "<group>"; };
 		291EDA002C4EA7EE007B6A79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291EDA022C4EA7EE007B6A79 /* Pokey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pokey.entitlements; sourceTree = "<group>"; };
 		291EDA042C4EA7EE007B6A79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +90,16 @@
 		291EDA142C4EA7EE007B6A79 /* PokeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		291EDA182C4EA7EE007B6A79 /* PokeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyUITests.swift; sourceTree = "<group>"; };
 		291EDA1A2C4EA7EE007B6A79 /* PokeyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		291EDA2B2C4EA97F007B6A79 /* PokeyWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokeyWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		291EDA2D2C4EA97F007B6A79 /* PokeyWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyWatchApp.swift; sourceTree = "<group>"; };
+		291EDA2F2C4EA97F007B6A79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		291EDA312C4EA980007B6A79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		291EDA342C4EA980007B6A79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		291EDA3A2C4EA980007B6A79 /* PokeyWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PokeyWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		291EDA3E2C4EA980007B6A79 /* PokeyWatch_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyWatch_Watch_AppTests.swift; sourceTree = "<group>"; };
+		291EDA442C4EA980007B6A79 /* PokeyWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PokeyWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		291EDA482C4EA980007B6A79 /* PokeyWatch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyWatch_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		291EDA4A2C4EA980007B6A79 /* PokeyWatch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyWatch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +124,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		291EDA282C4EA97F007B6A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA372C4EA980007B6A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA412C4EA980007B6A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +154,9 @@
 				291ED9F92C4EA7ED007B6A79 /* Pokey */,
 				291EDA0D2C4EA7EE007B6A79 /* PokeyTests */,
 				291EDA172C4EA7EE007B6A79 /* PokeyUITests */,
+				291EDA2C2C4EA97F007B6A79 /* PokeyWatch Watch App */,
+				291EDA3D2C4EA980007B6A79 /* PokeyWatch Watch AppTests */,
+				291EDA472C4EA980007B6A79 /* PokeyWatch Watch AppUITests */,
 				291ED9F82C4EA7ED007B6A79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +167,9 @@
 				291ED9F72C4EA7ED007B6A79 /* Pokey.app */,
 				291EDA0A2C4EA7EE007B6A79 /* PokeyTests.xctest */,
 				291EDA142C4EA7EE007B6A79 /* PokeyUITests.xctest */,
+				291EDA2B2C4EA97F007B6A79 /* PokeyWatch Watch App.app */,
+				291EDA3A2C4EA980007B6A79 /* PokeyWatch Watch AppTests.xctest */,
+				291EDA442C4EA980007B6A79 /* PokeyWatch Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,7 +179,7 @@
 			children = (
 				291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */,
 				291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */,
-				291ED9FE2C4EA7ED007B6A79 /* Item.swift */,
+				291ED9FE2C4EA7ED007B6A79 /* PokeyItem.swift */,
 				291EDA002C4EA7EE007B6A79 /* Assets.xcassets */,
 				291EDA022C4EA7EE007B6A79 /* Pokey.entitlements */,
 				291EDA032C4EA7EE007B6A79 /* Preview Content */,
@@ -132,6 +212,42 @@
 			path = PokeyUITests;
 			sourceTree = "<group>";
 		};
+		291EDA2C2C4EA97F007B6A79 /* PokeyWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA2D2C4EA97F007B6A79 /* PokeyWatchApp.swift */,
+				291EDA2F2C4EA97F007B6A79 /* ContentView.swift */,
+				291EDA312C4EA980007B6A79 /* Assets.xcassets */,
+				291EDA332C4EA980007B6A79 /* Preview Content */,
+			);
+			path = "PokeyWatch Watch App";
+			sourceTree = "<group>";
+		};
+		291EDA332C4EA980007B6A79 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA342C4EA980007B6A79 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		291EDA3D2C4EA980007B6A79 /* PokeyWatch Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA3E2C4EA980007B6A79 /* PokeyWatch_Watch_AppTests.swift */,
+			);
+			path = "PokeyWatch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		291EDA472C4EA980007B6A79 /* PokeyWatch Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA482C4EA980007B6A79 /* PokeyWatch_Watch_AppUITests.swift */,
+				291EDA4A2C4EA980007B6A79 /* PokeyWatch_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "PokeyWatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,10 +258,12 @@
 				291ED9F32C4EA7ED007B6A79 /* Sources */,
 				291ED9F42C4EA7ED007B6A79 /* Frameworks */,
 				291ED9F52C4EA7ED007B6A79 /* Resources */,
+				291EDA522C4EA980007B6A79 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				291EDA4D2C4EA980007B6A79 /* PBXTargetDependency */,
 			);
 			name = Pokey;
 			productName = Pokey;
@@ -188,6 +306,59 @@
 			productReference = 291EDA142C4EA7EE007B6A79 /* PokeyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		291EDA2A2C4EA97F007B6A79 /* PokeyWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291EDA4F2C4EA980007B6A79 /* Build configuration list for PBXNativeTarget "PokeyWatch Watch App" */;
+			buildPhases = (
+				291EDA272C4EA97F007B6A79 /* Sources */,
+				291EDA282C4EA97F007B6A79 /* Frameworks */,
+				291EDA292C4EA97F007B6A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PokeyWatch Watch App";
+			productName = "PokeyWatch Watch App";
+			productReference = 291EDA2B2C4EA97F007B6A79 /* PokeyWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		291EDA392C4EA980007B6A79 /* PokeyWatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291EDA532C4EA980007B6A79 /* Build configuration list for PBXNativeTarget "PokeyWatch Watch AppTests" */;
+			buildPhases = (
+				291EDA362C4EA980007B6A79 /* Sources */,
+				291EDA372C4EA980007B6A79 /* Frameworks */,
+				291EDA382C4EA980007B6A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				291EDA3C2C4EA980007B6A79 /* PBXTargetDependency */,
+			);
+			name = "PokeyWatch Watch AppTests";
+			productName = "PokeyWatch Watch AppTests";
+			productReference = 291EDA3A2C4EA980007B6A79 /* PokeyWatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		291EDA432C4EA980007B6A79 /* PokeyWatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291EDA562C4EA980007B6A79 /* Build configuration list for PBXNativeTarget "PokeyWatch Watch AppUITests" */;
+			buildPhases = (
+				291EDA402C4EA980007B6A79 /* Sources */,
+				291EDA412C4EA980007B6A79 /* Frameworks */,
+				291EDA422C4EA980007B6A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				291EDA462C4EA980007B6A79 /* PBXTargetDependency */,
+			);
+			name = "PokeyWatch Watch AppUITests";
+			productName = "PokeyWatch Watch AppUITests";
+			productReference = 291EDA442C4EA980007B6A79 /* PokeyWatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +380,17 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 291ED9F62C4EA7ED007B6A79;
 					};
+					291EDA2A2C4EA97F007B6A79 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					291EDA392C4EA980007B6A79 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 291EDA2A2C4EA97F007B6A79;
+					};
+					291EDA432C4EA980007B6A79 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 291EDA2A2C4EA97F007B6A79;
+					};
 				};
 			};
 			buildConfigurationList = 291ED9F22C4EA7ED007B6A79 /* Build configuration list for PBXProject "Pokey" */;
@@ -227,6 +409,9 @@
 				291ED9F62C4EA7ED007B6A79 /* Pokey */,
 				291EDA092C4EA7EE007B6A79 /* PokeyTests */,
 				291EDA132C4EA7EE007B6A79 /* PokeyUITests */,
+				291EDA2A2C4EA97F007B6A79 /* PokeyWatch Watch App */,
+				291EDA392C4EA980007B6A79 /* PokeyWatch Watch AppTests */,
+				291EDA432C4EA980007B6A79 /* PokeyWatch Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +440,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		291EDA292C4EA97F007B6A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291EDA352C4EA980007B6A79 /* Preview Assets.xcassets in Resources */,
+				291EDA322C4EA980007B6A79 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA382C4EA980007B6A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA422C4EA980007B6A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,7 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291ED9FD2C4EA7ED007B6A79 /* ContentView.swift in Sources */,
-				291ED9FF2C4EA7ED007B6A79 /* Item.swift in Sources */,
+				291ED9FF2C4EA7ED007B6A79 /* PokeyItem.swift in Sources */,
 				291ED9FB2C4EA7ED007B6A79 /* PokeyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +493,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		291EDA272C4EA97F007B6A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291EDA302C4EA97F007B6A79 /* ContentView.swift in Sources */,
+				291EDA2E2C4EA97F007B6A79 /* PokeyWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA362C4EA980007B6A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291EDA3F2C4EA980007B6A79 /* PokeyWatch_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291EDA402C4EA980007B6A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291EDA492C4EA980007B6A79 /* PokeyWatch_Watch_AppUITests.swift in Sources */,
+				291EDA4B2C4EA980007B6A79 /* PokeyWatch_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -297,6 +531,21 @@
 			isa = PBXTargetDependency;
 			target = 291ED9F62C4EA7ED007B6A79 /* Pokey */;
 			targetProxy = 291EDA152C4EA7EE007B6A79 /* PBXContainerItemProxy */;
+		};
+		291EDA3C2C4EA980007B6A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 291EDA2A2C4EA97F007B6A79 /* PokeyWatch Watch App */;
+			targetProxy = 291EDA3B2C4EA980007B6A79 /* PBXContainerItemProxy */;
+		};
+		291EDA462C4EA980007B6A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 291EDA2A2C4EA97F007B6A79 /* PokeyWatch Watch App */;
+			targetProxy = 291EDA452C4EA980007B6A79 /* PBXContainerItemProxy */;
+		};
+		291EDA4D2C4EA980007B6A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 291EDA2A2C4EA97F007B6A79 /* PokeyWatch Watch App */;
+			targetProxy = 291EDA4C2C4EA980007B6A79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,6 +667,7 @@
 		291EDA1F2C4EA7EE007B6A79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pokey/Pokey.entitlements;
@@ -456,6 +706,7 @@
 		291EDA202C4EA7EE007B6A79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pokey/Pokey.entitlements;
@@ -581,6 +832,151 @@
 			};
 			name = Release;
 		};
+		291EDA502C4EA980007B6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PokeyWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PokeyWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.glnygl.Pokey;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glnygl.Pokey.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		291EDA512C4EA980007B6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PokeyWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PokeyWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.glnygl.Pokey;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glnygl.Pokey.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		291EDA542C4EA980007B6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glnygl.PokeyWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeyWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeyWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		291EDA552C4EA980007B6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glnygl.PokeyWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeyWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeyWatch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		291EDA572C4EA980007B6A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glnygl.PokeyWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "PokeyWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		291EDA582C4EA980007B6A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS69B87VMV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glnygl.PokeyWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "PokeyWatch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -616,6 +1012,33 @@
 			buildConfigurations = (
 				291EDA252C4EA7EE007B6A79 /* Debug */,
 				291EDA262C4EA7EE007B6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		291EDA4F2C4EA980007B6A79 /* Build configuration list for PBXNativeTarget "PokeyWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291EDA502C4EA980007B6A79 /* Debug */,
+				291EDA512C4EA980007B6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		291EDA532C4EA980007B6A79 /* Build configuration list for PBXNativeTarget "PokeyWatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291EDA542C4EA980007B6A79 /* Debug */,
+				291EDA552C4EA980007B6A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		291EDA562C4EA980007B6A79 /* Build configuration list for PBXNativeTarget "PokeyWatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291EDA572C4EA980007B6A79 /* Debug */,
+				291EDA582C4EA980007B6A79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

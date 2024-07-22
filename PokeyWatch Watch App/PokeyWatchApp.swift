@@ -1,15 +1,14 @@
 //
-//  PokeyApp.swift
-//  Pokey
+//  PokeyWatchApp.swift
+//  PokeyWatch Watch App
 //
 //  Created by Glny Gl on 22/07/2024.
 //
 
 import SwiftUI
-import SwiftData
 
 @main
-struct PokeyApp: App {
+struct PokeyWatch_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
