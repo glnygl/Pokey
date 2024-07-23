@@ -23,6 +23,14 @@
 		291EDA492C4EA980007B6A79 /* PokeyWatch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA482C4EA980007B6A79 /* PokeyWatch_Watch_AppUITests.swift */; };
 		291EDA4B2C4EA980007B6A79 /* PokeyWatch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA4A2C4EA980007B6A79 /* PokeyWatch_Watch_AppUITestsLaunchTests.swift */; };
 		291EDA4E2C4EA980007B6A79 /* PokeyWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 291EDA2B2C4EA97F007B6A79 /* PokeyWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		291EDA5D2C4EAB60007B6A79 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA5C2C4EAB60007B6A79 /* Coordinator.swift */; };
+		291EDA5F2C4EAB70007B6A79 /* HomeCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA5E2C4EAB70007B6A79 /* HomeCoordinatorView.swift */; };
+		291EDA622C4EAB93007B6A79 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA612C4EAB93007B6A79 /* TabBar.swift */; };
+		291EDA672C4EABCA007B6A79 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA662C4EABCA007B6A79 /* HomeView.swift */; };
+		291EDA692C4EABE1007B6A79 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA682C4EABE1007B6A79 /* DetailView.swift */; };
+		291EDA6B2C4EAC05007B6A79 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA6A2C4EAC05007B6A79 /* FavoritesView.swift */; };
+		291EDA6D2C4ED437007B6A79 /* FavoritesCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA6C2C4ED437007B6A79 /* FavoritesCoordinatorView.swift */; };
+		291EDA772C4FF2ED007B6A79 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +108,14 @@
 		291EDA442C4EA980007B6A79 /* PokeyWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PokeyWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		291EDA482C4EA980007B6A79 /* PokeyWatch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyWatch_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		291EDA4A2C4EA980007B6A79 /* PokeyWatch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyWatch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		291EDA5C2C4EAB60007B6A79 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		291EDA5E2C4EAB70007B6A79 /* HomeCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorView.swift; sourceTree = "<group>"; };
+		291EDA612C4EAB93007B6A79 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		291EDA662C4EABCA007B6A79 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		291EDA682C4EABE1007B6A79 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		291EDA6A2C4EAC05007B6A79 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		291EDA6C2C4ED437007B6A79 /* FavoritesCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorView.swift; sourceTree = "<group>"; };
+		291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,9 +193,14 @@
 		291ED9F92C4EA7ED007B6A79 /* Pokey */ = {
 			isa = PBXGroup;
 			children = (
+				291EDA602C4EAB80007B6A79 /* TabBar */,
+				291EDA5B2C4EAB44007B6A79 /* Network */,
+				291EDA5A2C4EAB3A007B6A79 /* Scenes */,
+				291EDA592C4EAB32007B6A79 /* Coordinator */,
 				291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */,
 				291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */,
 				291ED9FE2C4EA7ED007B6A79 /* PokeyItem.swift */,
+				291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */,
 				291EDA002C4EA7EE007B6A79 /* Assets.xcassets */,
 				291EDA022C4EA7EE007B6A79 /* Pokey.entitlements */,
 				291EDA032C4EA7EE007B6A79 /* Preview Content */,
@@ -246,6 +267,65 @@
 				291EDA4A2C4EA980007B6A79 /* PokeyWatch_Watch_AppUITestsLaunchTests.swift */,
 			);
 			path = "PokeyWatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		291EDA592C4EAB32007B6A79 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA5C2C4EAB60007B6A79 /* Coordinator.swift */,
+				291EDA5E2C4EAB70007B6A79 /* HomeCoordinatorView.swift */,
+				291EDA6C2C4ED437007B6A79 /* FavoritesCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		291EDA5A2C4EAB3A007B6A79 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA632C4EABA3007B6A79 /* Home */,
+				291EDA642C4EABAF007B6A79 /* Detail */,
+				291EDA652C4EABB6007B6A79 /* Favorites */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		291EDA5B2C4EAB44007B6A79 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		291EDA602C4EAB80007B6A79 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA612C4EAB93007B6A79 /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		291EDA632C4EABA3007B6A79 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA662C4EABCA007B6A79 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		291EDA642C4EABAF007B6A79 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA682C4EABE1007B6A79 /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		291EDA652C4EABB6007B6A79 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA6A2C4EAC05007B6A79 /* FavoritesView.swift */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,9 +550,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291EDA5D2C4EAB60007B6A79 /* Coordinator.swift in Sources */,
+				291EDA692C4EABE1007B6A79 /* DetailView.swift in Sources */,
+				291EDA672C4EABCA007B6A79 /* HomeView.swift in Sources */,
+				291EDA5F2C4EAB70007B6A79 /* HomeCoordinatorView.swift in Sources */,
 				291ED9FD2C4EA7ED007B6A79 /* ContentView.swift in Sources */,
+				291EDA622C4EAB93007B6A79 /* TabBar.swift in Sources */,
 				291ED9FF2C4EA7ED007B6A79 /* PokeyItem.swift in Sources */,
 				291ED9FB2C4EA7ED007B6A79 /* PokeyApp.swift in Sources */,
+				291EDA6B2C4EAC05007B6A79 /* FavoritesView.swift in Sources */,
+				291EDA772C4FF2ED007B6A79 /* ViewModifiers.swift in Sources */,
+				291EDA6D2C4ED437007B6A79 /* FavoritesCoordinatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
