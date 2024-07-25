@@ -31,6 +31,15 @@
 		291EDA6B2C4EAC05007B6A79 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA6A2C4EAC05007B6A79 /* FavoritesView.swift */; };
 		291EDA6D2C4ED437007B6A79 /* FavoritesCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA6C2C4ED437007B6A79 /* FavoritesCoordinatorView.swift */; };
 		291EDA772C4FF2ED007B6A79 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */; };
+		291EDA792C4FFA57007B6A79 /* PokeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA782C4FFA57007B6A79 /* PokeyView.swift */; };
+		291EDA7B2C4FFA65007B6A79 /* PokeyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA7A2C4FFA65007B6A79 /* PokeyDetailView.swift */; };
+		291EDA7D2C4FFBE5007B6A79 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA7C2C4FFBE5007B6A79 /* HomeViewModel.swift */; };
+		291EDA802C4FFCD3007B6A79 /* PokeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA7F2C4FFCD3007B6A79 /* PokeyList.swift */; };
+		291EDA842C5000CB007B6A79 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA832C5000CB007B6A79 /* NetworkManager.swift */; };
+		291EDA862C5002D6007B6A79 /* DiscoverRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA852C5002D6007B6A79 /* DiscoverRequest.swift */; };
+		291EDA892C5147C1007B6A79 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA882C5147C1007B6A79 /* ArrayExtensions.swift */; };
+		291EDA8B2C518B7A007B6A79 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8A2C518B7A007B6A79 /* DictionaryExtensions.swift */; };
+		291EDA8D2C518F89007B6A79 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8C2C518F89007B6A79 /* EncodableExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +125,15 @@
 		291EDA6A2C4EAC05007B6A79 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		291EDA6C2C4ED437007B6A79 /* FavoritesCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorView.swift; sourceTree = "<group>"; };
 		291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		291EDA782C4FFA57007B6A79 /* PokeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyView.swift; sourceTree = "<group>"; };
+		291EDA7A2C4FFA65007B6A79 /* PokeyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyDetailView.swift; sourceTree = "<group>"; };
+		291EDA7C2C4FFBE5007B6A79 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		291EDA7F2C4FFCD3007B6A79 /* PokeyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyList.swift; sourceTree = "<group>"; };
+		291EDA832C5000CB007B6A79 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		291EDA852C5002D6007B6A79 /* DiscoverRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRequest.swift; sourceTree = "<group>"; };
+		291EDA882C5147C1007B6A79 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		291EDA8A2C518B7A007B6A79 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		291EDA8C2C518F89007B6A79 /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +215,8 @@
 				291EDA5B2C4EAB44007B6A79 /* Network */,
 				291EDA5A2C4EAB3A007B6A79 /* Scenes */,
 				291EDA592C4EAB32007B6A79 /* Coordinator */,
+				291EDA7E2C4FFCA8007B6A79 /* Models */,
+				291EDA872C5147A4007B6A79 /* Extensions */,
 				291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */,
 				291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */,
 				291ED9FE2C4EA7ED007B6A79 /* PokeyItem.swift */,
@@ -292,6 +312,8 @@
 		291EDA5B2C4EAB44007B6A79 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				291EDA832C5000CB007B6A79 /* NetworkManager.swift */,
+				291EDA852C5002D6007B6A79 /* DiscoverRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -308,6 +330,8 @@
 			isa = PBXGroup;
 			children = (
 				291EDA662C4EABCA007B6A79 /* HomeView.swift */,
+				291EDA782C4FFA57007B6A79 /* PokeyView.swift */,
+				291EDA7C2C4FFBE5007B6A79 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -316,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				291EDA682C4EABE1007B6A79 /* DetailView.swift */,
+				291EDA7A2C4FFA65007B6A79 /* PokeyDetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -326,6 +351,24 @@
 				291EDA6A2C4EAC05007B6A79 /* FavoritesView.swift */,
 			);
 			path = Favorites;
+			sourceTree = "<group>";
+		};
+		291EDA7E2C4FFCA8007B6A79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA7F2C4FFCD3007B6A79 /* PokeyList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		291EDA872C5147A4007B6A79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA882C5147C1007B6A79 /* ArrayExtensions.swift */,
+				291EDA8A2C518B7A007B6A79 /* DictionaryExtensions.swift */,
+				291EDA8C2C518F89007B6A79 /* EncodableExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -551,13 +594,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				291EDA5D2C4EAB60007B6A79 /* Coordinator.swift in Sources */,
+				291EDA792C4FFA57007B6A79 /* PokeyView.swift in Sources */,
 				291EDA692C4EABE1007B6A79 /* DetailView.swift in Sources */,
 				291EDA672C4EABCA007B6A79 /* HomeView.swift in Sources */,
 				291EDA5F2C4EAB70007B6A79 /* HomeCoordinatorView.swift in Sources */,
 				291ED9FD2C4EA7ED007B6A79 /* ContentView.swift in Sources */,
+				291EDA802C4FFCD3007B6A79 /* PokeyList.swift in Sources */,
+				291EDA892C5147C1007B6A79 /* ArrayExtensions.swift in Sources */,
 				291EDA622C4EAB93007B6A79 /* TabBar.swift in Sources */,
 				291ED9FF2C4EA7ED007B6A79 /* PokeyItem.swift in Sources */,
+				291EDA8B2C518B7A007B6A79 /* DictionaryExtensions.swift in Sources */,
+				291EDA842C5000CB007B6A79 /* NetworkManager.swift in Sources */,
+				291EDA8D2C518F89007B6A79 /* EncodableExtensions.swift in Sources */,
 				291ED9FB2C4EA7ED007B6A79 /* PokeyApp.swift in Sources */,
+				291EDA862C5002D6007B6A79 /* DiscoverRequest.swift in Sources */,
+				291EDA7D2C4FFBE5007B6A79 /* HomeViewModel.swift in Sources */,
+				291EDA7B2C4FFA65007B6A79 /* PokeyDetailView.swift in Sources */,
 				291EDA6B2C4EAC05007B6A79 /* FavoritesView.swift in Sources */,
 				291EDA772C4FF2ED007B6A79 /* ViewModifiers.swift in Sources */,
 				291EDA6D2C4ED437007B6A79 /* FavoritesCoordinatorView.swift in Sources */,

@@ -9,6 +9,13 @@ import SwiftUI
 
 struct FavoritesView: View {
     @EnvironmentObject var coordinator: Coordinator
+    
+    let columns = [
+        GridItem(.flexible(), spacing: 10),
+        GridItem(.flexible(), spacing: 10),
+        GridItem(.flexible(), spacing: 10)
+    ]
+    
     var body: some View {
         Text("FavoritesView")
     }
