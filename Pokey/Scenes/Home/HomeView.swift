@@ -22,10 +22,11 @@ struct HomeView: View {
             LazyVGrid(columns: columns, spacing: 10) {
                 ForEach(viewModel.pokeys) { pokey in
                     VStack {
-                        Text(pokey.name ?? "")
-                        Button("Tap button") {
-                            coordinator.push(page: .detail)
-                            print(pokey.name ?? "")
+                        PokeyView(pokey: pokey)
+//                            .frame(width: 120, height: 180)
+                            .background(Color.accentColor)
+                            .onTapGesture {
+                                coordinator.push(page: .detail(pokey: pokey))
                         }
                     }
                 }

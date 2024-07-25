@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct PokeyView: View {
+    
+    var pokey: Pokey
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VStack {
+                AsyncImage(
+                    url: URL(string: pokey.img ?? "" ),
+                    content: { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fit)
+//                            .frame(maxWidth: 150, maxHeight: 150)
+                    },
+                    placeholder: {
+                        ProgressView()
+                    }
+                )
+                Text(pokey.name ?? "")
+            }
+            .background(Color.accentColor)
+        }
     }
-}
-
-#Preview {
-    PokeyView()
 }

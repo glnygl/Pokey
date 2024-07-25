@@ -40,6 +40,8 @@
 		291EDA892C5147C1007B6A79 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA882C5147C1007B6A79 /* ArrayExtensions.swift */; };
 		291EDA8B2C518B7A007B6A79 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8A2C518B7A007B6A79 /* DictionaryExtensions.swift */; };
 		291EDA8D2C518F89007B6A79 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8C2C518F89007B6A79 /* EncodableExtensions.swift */; };
+		291EDA8F2C529942007B6A79 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8E2C529942007B6A79 /* ViewExtensions.swift */; };
+		291EDA922C529E19007B6A79 /* PageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA912C529E19007B6A79 /* PageEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +136,9 @@
 		291EDA882C5147C1007B6A79 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		291EDA8A2C518B7A007B6A79 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		291EDA8C2C518F89007B6A79 /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
+		291EDA8E2C529942007B6A79 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		291EDA912C529E19007B6A79 /* PageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageEnum.swift; sourceTree = "<group>"; };
+		291EDA932C52EF47007B6A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,12 +216,14 @@
 		291ED9F92C4EA7ED007B6A79 /* Pokey */ = {
 			isa = PBXGroup;
 			children = (
+				291EDA932C52EF47007B6A79 /* Info.plist */,
 				291EDA602C4EAB80007B6A79 /* TabBar */,
 				291EDA5B2C4EAB44007B6A79 /* Network */,
-				291EDA5A2C4EAB3A007B6A79 /* Scenes */,
 				291EDA592C4EAB32007B6A79 /* Coordinator */,
+				291EDA5A2C4EAB3A007B6A79 /* Scenes */,
 				291EDA7E2C4FFCA8007B6A79 /* Models */,
 				291EDA872C5147A4007B6A79 /* Extensions */,
+				291EDA902C529E0A007B6A79 /* Enums */,
 				291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */,
 				291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */,
 				291ED9FE2C4EA7ED007B6A79 /* PokeyItem.swift */,
@@ -367,8 +374,17 @@
 				291EDA882C5147C1007B6A79 /* ArrayExtensions.swift */,
 				291EDA8A2C518B7A007B6A79 /* DictionaryExtensions.swift */,
 				291EDA8C2C518F89007B6A79 /* EncodableExtensions.swift */,
+				291EDA8E2C529942007B6A79 /* ViewExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		291EDA902C529E0A007B6A79 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA912C529E19007B6A79 /* PageEnum.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -594,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291EDA5D2C4EAB60007B6A79 /* Coordinator.swift in Sources */,
+				291EDA8F2C529942007B6A79 /* ViewExtensions.swift in Sources */,
 				291EDA792C4FFA57007B6A79 /* PokeyView.swift in Sources */,
 				291EDA692C4EABE1007B6A79 /* DetailView.swift in Sources */,
 				291EDA672C4EABCA007B6A79 /* HomeView.swift in Sources */,
@@ -613,6 +630,7 @@
 				291EDA6B2C4EAC05007B6A79 /* FavoritesView.swift in Sources */,
 				291EDA772C4FF2ED007B6A79 /* ViewModifiers.swift in Sources */,
 				291EDA6D2C4ED437007B6A79 /* FavoritesCoordinatorView.swift in Sources */,
+				291EDA922C529E19007B6A79 /* PageEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,6 +836,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokey/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -857,6 +876,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokey/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
