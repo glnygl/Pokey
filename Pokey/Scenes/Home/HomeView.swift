@@ -42,15 +42,15 @@ struct HomeView: View {
                 .padding(6)
                 Spacer()
                     .navigationTitle("Pokey")
-                    .onViewDidLoad {
-                        Task {
-                            do {
-                                try await viewModel.fetchPokeyList()
-                            } catch {
-                                print(CustomError.requestFailed)
-                            }
-                        }
+            }
+            .onViewDidLoad {
+                Task {
+                    do {
+                        try await viewModel.fetchPokeyList()
+                    } catch {
+                        print(CustomError.requestFailed)
                     }
+                }
             }
         }
     }

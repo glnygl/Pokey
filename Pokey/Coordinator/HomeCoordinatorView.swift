@@ -18,7 +18,3 @@ struct HomeCoordinatorView: View {
         }.environmentObject(coordinator)
     }
 }
-
-#Preview {
-    HomeCoordinatorView()
-}

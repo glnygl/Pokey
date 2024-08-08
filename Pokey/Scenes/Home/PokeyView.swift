@@ -24,6 +24,7 @@ struct PokeyView: View {
                 }
             )
             Text(pokey.name ?? "")
+            Spacer()
         }
     }
 }

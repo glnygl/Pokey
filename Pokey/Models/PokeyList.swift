@@ -15,7 +15,7 @@ struct PokeyList: Codable {
     }
 }
 
-struct Pokey: Codable, Identifiable {
+struct Pokey: Codable, Identifiable, Hashable {
     
     let id: Int?
     let name: String?
@@ -31,5 +31,4 @@ struct Pokey: Codable, Identifiable {
         case id, name, img, type, weaknesses, height, weight
         case candy = "candy_count"
     }
-    
 }

@@ -18,7 +18,3 @@ struct FavoritesCoordinatorView: View {
         }.environmentObject(coordinator)
     }
 }
-
-#Preview {
-    FavoritesCoordinatorView()
-}

@@ -40,6 +40,18 @@
 		291EDA9F2C639ED0007B6A79 /* HomeWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA9E2C639ED0007B6A79 /* HomeWatchView.swift */; };
 		291EDAA32C639EF9007B6A79 /* DetailWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDAA22C639EF9007B6A79 /* DetailWatchView.swift */; };
 		291EDAA52C639F08007B6A79 /* FavoritesWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDAA42C639F08007B6A79 /* FavoritesWatchView.swift */; };
+		291EDAA72C63A2C8007B6A79 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDAA62C63A2C8007B6A79 /* WatchConnector.swift */; };
+		291EDAA92C63AFEE007B6A79 /* iOSConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDAA82C63AFEE007B6A79 /* iOSConnector.swift */; };
+		291EDAAA2C63B0DD007B6A79 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA7C2C4FFBE5007B6A79 /* HomeViewModel.swift */; };
+		291EDAAB2C63B100007B6A79 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA832C5000CB007B6A79 /* NetworkManager.swift */; };
+		291EDAAC2C63B100007B6A79 /* DiscoverRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA852C5002D6007B6A79 /* DiscoverRequest.swift */; };
+		291EDAAD2C63B124007B6A79 /* PokeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA7F2C4FFCD3007B6A79 /* PokeyList.swift */; };
+		291EDAAE2C63B13E007B6A79 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8A2C518B7A007B6A79 /* DictionaryExtensions.swift */; };
+		291EDAB22C63B2D3007B6A79 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA882C5147C1007B6A79 /* ArrayExtensions.swift */; };
+		291EDAB32C63B2F1007B6A79 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8C2C518F89007B6A79 /* EncodableExtensions.swift */; };
+		291EDAB72C63B553007B6A79 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */; };
+		291EDAB92C63BF81007B6A79 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8E2C529942007B6A79 /* ViewExtensions.swift */; };
+		29A312432C64F52E00BE0918 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA942C530471007B6A79 /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +115,9 @@
 		291EDA9E2C639ED0007B6A79 /* HomeWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWatchView.swift; sourceTree = "<group>"; };
 		291EDAA22C639EF9007B6A79 /* DetailWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWatchView.swift; sourceTree = "<group>"; };
 		291EDAA42C639F08007B6A79 /* FavoritesWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesWatchView.swift; sourceTree = "<group>"; };
+		291EDAA62C63A2C8007B6A79 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		291EDAA82C63AFEE007B6A79 /* iOSConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSConnector.swift; sourceTree = "<group>"; };
+		291EDABB2C63BFFD007B6A79 /* PokeyWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PokeyWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +175,7 @@
 				291EDA002C4EA7EE007B6A79 /* Assets.xcassets */,
 				291EDA022C4EA7EE007B6A79 /* Pokey.entitlements */,
 				291EDA032C4EA7EE007B6A79 /* Preview Content */,
+				291EDAA62C63A2C8007B6A79 /* WatchConnector.swift */,
 			);
 			path = Pokey;
 			sourceTree = "<group>";
@@ -175,11 +191,13 @@
 		291EDA2C2C4EA97F007B6A79 /* PokeyWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				291EDABB2C63BFFD007B6A79 /* PokeyWatch-Watch-App-Info.plist */,
 				291EDA9A2C6255AC007B6A79 /* TabWatchView */,
 				291EDA962C62552C007B6A79 /* Scenes */,
 				291EDA2D2C4EA97F007B6A79 /* PokeyWatchApp.swift */,
 				291EDA312C4EA980007B6A79 /* Assets.xcassets */,
 				291EDA332C4EA980007B6A79 /* Preview Content */,
+				291EDAA82C63AFEE007B6A79 /* iOSConnector.swift */,
 			);
 			path = "PokeyWatch Watch App";
 			sourceTree = "<group>";
@@ -428,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291EDA5D2C4EAB60007B6A79 /* Coordinator.swift in Sources */,
+				291EDAA72C63A2C8007B6A79 /* WatchConnector.swift in Sources */,
 				291EDA8F2C529942007B6A79 /* ViewExtensions.swift in Sources */,
 				291EDA792C4FFA57007B6A79 /* PokeyView.swift in Sources */,
 				291EDA692C4EABE1007B6A79 /* DetailView.swift in Sources */,
@@ -457,7 +476,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A312432C64F52E00BE0918 /* RoundedCorner.swift in Sources */,
+				291EDAB92C63BF81007B6A79 /* ViewExtensions.swift in Sources */,
+				291EDAB72C63B553007B6A79 /* ViewModifiers.swift in Sources */,
+				291EDAB32C63B2F1007B6A79 /* EncodableExtensions.swift in Sources */,
+				291EDAB22C63B2D3007B6A79 /* ArrayExtensions.swift in Sources */,
+				291EDAAE2C63B13E007B6A79 /* DictionaryExtensions.swift in Sources */,
+				291EDAAD2C63B124007B6A79 /* PokeyList.swift in Sources */,
+				291EDAAB2C63B100007B6A79 /* NetworkManager.swift in Sources */,
+				291EDAAC2C63B100007B6A79 /* DiscoverRequest.swift in Sources */,
+				291EDAAA2C63B0DD007B6A79 /* HomeViewModel.swift in Sources */,
 				291EDA9C2C6255C2007B6A79 /* TabWatchView.swift in Sources */,
+				291EDAA92C63AFEE007B6A79 /* iOSConnector.swift in Sources */,
 				291EDAA32C639EF9007B6A79 /* DetailWatchView.swift in Sources */,
 				291EDA9F2C639ED0007B6A79 /* HomeWatchView.swift in Sources */,
 				291EDAA52C639F08007B6A79 /* FavoritesWatchView.swift in Sources */,
@@ -679,6 +709,7 @@
 				DEVELOPMENT_TEAM = SS69B87VMV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PokeyWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = PokeyWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.glnygl.Pokey;
@@ -709,6 +740,7 @@
 				DEVELOPMENT_TEAM = SS69B87VMV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PokeyWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = PokeyWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.glnygl.Pokey;
