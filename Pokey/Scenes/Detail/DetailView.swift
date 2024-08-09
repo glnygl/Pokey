@@ -10,9 +10,16 @@ import SwiftUI
 struct DetailView: View {
     @EnvironmentObject var coordinator: Coordinator
     var pokey: Pokey?
+    @State var isFavorite: Bool = true
     
     var body: some View {
         Text(pokey?.name ?? "")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("", systemImage: isFavorite ? "heart.fill" : "heart") {
+                        self.isFavorite.toggle()
+                    }
+                }
+            }
     }
 }
-

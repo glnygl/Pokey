@@ -174,8 +174,8 @@
 				291EDA942C530471007B6A79 /* RoundedCorner.swift */,
 				291EDA002C4EA7EE007B6A79 /* Assets.xcassets */,
 				291EDA022C4EA7EE007B6A79 /* Pokey.entitlements */,
-				291EDA032C4EA7EE007B6A79 /* Preview Content */,
 				291EDAA62C63A2C8007B6A79 /* WatchConnector.swift */,
+				291EDA032C4EA7EE007B6A79 /* Preview Content */,
 			);
 			path = Pokey;
 			sourceTree = "<group>";
@@ -195,9 +195,9 @@
 				291EDA9A2C6255AC007B6A79 /* TabWatchView */,
 				291EDA962C62552C007B6A79 /* Scenes */,
 				291EDA2D2C4EA97F007B6A79 /* PokeyWatchApp.swift */,
+				291EDAA82C63AFEE007B6A79 /* iOSConnector.swift */,
 				291EDA312C4EA980007B6A79 /* Assets.xcassets */,
 				291EDA332C4EA980007B6A79 /* Preview Content */,
-				291EDAA82C63AFEE007B6A79 /* iOSConnector.swift */,
 			);
 			path = "PokeyWatch Watch App";
 			sourceTree = "<group>";

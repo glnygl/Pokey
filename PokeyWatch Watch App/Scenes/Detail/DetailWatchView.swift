@@ -9,14 +9,14 @@ import SwiftUI
 
 struct DetailWatchView: View {
     var pokey: Pokey?
-    @State var isSelected: Bool = true
+    @State var isFavorite: Bool = true
     
     var body: some View {
         Text(pokey?.name ?? "")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("", systemImage: isSelected ? "heart.fill" : "heart" ) {
-                        self.isSelected.toggle()
+                    Button("", systemImage: isFavorite ? "heart.fill" : "heart" ) {
+                        self.isFavorite.toggle()
                     }
                 }
             }
