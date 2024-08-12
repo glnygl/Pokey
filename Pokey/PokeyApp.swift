@@ -12,7 +12,7 @@ import SwiftData
 struct PokeyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBar()
         }
     }
 }

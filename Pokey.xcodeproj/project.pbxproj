@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		291ED9FB2C4EA7ED007B6A79 /* PokeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */; };
-		291ED9FD2C4EA7ED007B6A79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */; };
 		291ED9FF2C4EA7ED007B6A79 /* PokeyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FE2C4EA7ED007B6A79 /* PokeyItem.swift */; };
 		291EDA012C4EA7EE007B6A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291EDA002C4EA7EE007B6A79 /* Assets.xcassets */; };
 		291EDA052C4EA7EE007B6A79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291EDA042C4EA7EE007B6A79 /* Preview Assets.xcassets */; };
@@ -25,7 +24,6 @@
 		291EDA6D2C4ED437007B6A79 /* FavoritesCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA6C2C4ED437007B6A79 /* FavoritesCoordinatorView.swift */; };
 		291EDA772C4FF2ED007B6A79 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */; };
 		291EDA792C4FFA57007B6A79 /* PokeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA782C4FFA57007B6A79 /* PokeyView.swift */; };
-		291EDA7B2C4FFA65007B6A79 /* PokeyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA7A2C4FFA65007B6A79 /* PokeyDetailView.swift */; };
 		291EDA7D2C4FFBE5007B6A79 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA7C2C4FFBE5007B6A79 /* HomeViewModel.swift */; };
 		291EDA802C4FFCD3007B6A79 /* PokeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA7F2C4FFCD3007B6A79 /* PokeyList.swift */; };
 		291EDA842C5000CB007B6A79 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA832C5000CB007B6A79 /* NetworkManager.swift */; };
@@ -81,7 +79,6 @@
 /* Begin PBXFileReference section */
 		291ED9F72C4EA7ED007B6A79 /* Pokey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyApp.swift; sourceTree = "<group>"; };
-		291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		291ED9FE2C4EA7ED007B6A79 /* PokeyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyItem.swift; sourceTree = "<group>"; };
 		291EDA002C4EA7EE007B6A79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291EDA022C4EA7EE007B6A79 /* Pokey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pokey.entitlements; sourceTree = "<group>"; };
@@ -99,7 +96,6 @@
 		291EDA6C2C4ED437007B6A79 /* FavoritesCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorView.swift; sourceTree = "<group>"; };
 		291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		291EDA782C4FFA57007B6A79 /* PokeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyView.swift; sourceTree = "<group>"; };
-		291EDA7A2C4FFA65007B6A79 /* PokeyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyDetailView.swift; sourceTree = "<group>"; };
 		291EDA7C2C4FFBE5007B6A79 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		291EDA7F2C4FFCD3007B6A79 /* PokeyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyList.swift; sourceTree = "<group>"; };
 		291EDA832C5000CB007B6A79 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -167,11 +163,10 @@
 				291EDA7E2C4FFCA8007B6A79 /* Models */,
 				291EDA872C5147A4007B6A79 /* Extensions */,
 				291EDA902C529E0A007B6A79 /* Enums */,
+				29A312492C6674EB00BE0918 /* Modifiers */,
+				29A3124A2C66750B00BE0918 /* CustomViews */,
 				291ED9FA2C4EA7ED007B6A79 /* PokeyApp.swift */,
-				291ED9FC2C4EA7ED007B6A79 /* ContentView.swift */,
 				291ED9FE2C4EA7ED007B6A79 /* PokeyItem.swift */,
-				291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */,
-				291EDA942C530471007B6A79 /* RoundedCorner.swift */,
 				291EDA002C4EA7EE007B6A79 /* Assets.xcassets */,
 				291EDA022C4EA7EE007B6A79 /* Pokey.entitlements */,
 				291EDAA62C63A2C8007B6A79 /* WatchConnector.swift */,
@@ -261,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				291EDA682C4EABE1007B6A79 /* DetailView.swift */,
-				291EDA7A2C4FFA65007B6A79 /* PokeyDetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -341,6 +335,22 @@
 				291EDA9B2C6255C2007B6A79 /* TabWatchView.swift */,
 			);
 			path = TabWatchView;
+			sourceTree = "<group>";
+		};
+		29A312492C6674EB00BE0918 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		29A3124A2C66750B00BE0918 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				291EDA942C530471007B6A79 /* RoundedCorner.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,7 +462,6 @@
 				291EDA692C4EABE1007B6A79 /* DetailView.swift in Sources */,
 				291EDA672C4EABCA007B6A79 /* HomeView.swift in Sources */,
 				291EDA5F2C4EAB70007B6A79 /* HomeCoordinatorView.swift in Sources */,
-				291ED9FD2C4EA7ED007B6A79 /* ContentView.swift in Sources */,
 				291EDA952C530471007B6A79 /* RoundedCorner.swift in Sources */,
 				291EDA802C4FFCD3007B6A79 /* PokeyList.swift in Sources */,
 				291EDA892C5147C1007B6A79 /* ArrayExtensions.swift in Sources */,
@@ -464,7 +473,6 @@
 				291ED9FB2C4EA7ED007B6A79 /* PokeyApp.swift in Sources */,
 				291EDA862C5002D6007B6A79 /* DiscoverRequest.swift in Sources */,
 				291EDA7D2C4FFBE5007B6A79 /* HomeViewModel.swift in Sources */,
-				291EDA7B2C4FFA65007B6A79 /* PokeyDetailView.swift in Sources */,
 				291EDA6B2C4EAC05007B6A79 /* FavoritesView.swift in Sources */,
 				291EDA772C4FF2ED007B6A79 /* ViewModifiers.swift in Sources */,
 				291EDA6D2C4ED437007B6A79 /* FavoritesCoordinatorView.swift in Sources */,
