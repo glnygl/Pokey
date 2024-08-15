@@ -33,7 +33,7 @@ struct DetailView: View {
                     }
                 }
             }
-            .onViewDidLoad {
+            .onAppear {
                 viewModel.isFavorite = favorites.checkIsFavorite(pokeyId: pokey?.id ?? -1)
             }
     }
