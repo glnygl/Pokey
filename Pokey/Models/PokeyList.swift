@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftData
 
 struct PokeyList: Codable {
     let data: [Pokey]?
@@ -30,5 +31,9 @@ struct Pokey: Codable, Identifiable, Hashable {
     enum CodingKeys: String, CodingKey {
         case id, name, img, type, weaknesses, height, weight
         case candy = "candy_count"
+    }
+    
+    func convertPokeyItem() -> FavoritePokeyItem {
+        FavoritePokeyItem(id: self.id, name: self.name, img: self.img, type: self.type, weaknesses: self.weaknesses, height: self.height, weight: self.weight, candy: self.candy)
     }
 }

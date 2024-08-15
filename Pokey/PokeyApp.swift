@@ -13,6 +13,7 @@ struct PokeyApp: App {
     var body: some Scene {
         WindowGroup {
             TabBar()
+                .modelContainer(for: FavoritePokeyItem.self)
         }
     }
 }

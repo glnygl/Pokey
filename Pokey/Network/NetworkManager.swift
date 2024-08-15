@@ -13,6 +13,7 @@ enum CustomError: Error {
     case responseUnsuccessful(description: String)
     case invalidURL(url: String)
     case parameterEncodingFailed
+    case deleteFailed
 }
 
 enum HTTPMethod: String {
