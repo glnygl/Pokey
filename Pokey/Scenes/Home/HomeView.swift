@@ -24,20 +24,24 @@ struct HomeView: View {
                         ZStack() {
                             VStack(spacing: 0) {
                                 PokeyView(pokey: pokey)
-                                    .containerRelativeFrame(.horizontal, { width, _ in
-                                       ( width - 30 ) / 3
+                                    .containerRelativeFrame([.horizontal, .vertical], {
+                                        length, axis in
+                                        if axis == .horizontal {
+                                            ( length - 30 ) / 3
+                                        } else { 180 }
                                     })
-                                    .frame(height: 180)
                                     .background(Color.background)
                                     .onTapGesture {
                                         coordinator.push(page: .detail(pokey: pokey))
                                     }
                                 Rectangle()
                                     .fill(.accent)
-                                    .containerRelativeFrame(.horizontal, { width, _ in
-                                        (width - 30) / 3
+                                    .containerRelativeFrame([.horizontal, .vertical], {
+                                        length, axis in
+                                        if axis == .horizontal {
+                                            ( length - 30 ) / 3
+                                        } else { 10 }
                                     })
-                                    .frame(height: 10)
                             }
                             .cornerRadius(10)
                             .giveShadow(color: .gray, radius: 4, x: 2.0, y: 2.0)

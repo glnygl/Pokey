@@ -26,14 +26,24 @@ struct FavoritesView: View {
                     ZStack() {
                         VStack(spacing: 0) {
                             PokeyView(pokey: favoritePokey.convertToPokey())
-                                .frame(width: (UIScreen.main.bounds.width - 30) / 3, height: 180)
+                                .containerRelativeFrame([.horizontal, .vertical], {
+                                    length, axis in
+                                    if axis == .horizontal {
+                                       abs(( length - 30 ) / 3)
+                                    } else { 180 }
+                                })
                                 .background(Color.background)
                                 .onTapGesture {
                                     coordinator.push(page: .detail(pokey: favoritePokey.convertToPokey()))
                                 }
                             Rectangle()
                                 .fill(.accent)
-                                .frame(width: (UIScreen.main.bounds.width - 30) / 3 , height: 10)
+                                .containerRelativeFrame([.horizontal, .vertical], {
+                                    length, axis in
+                                    if axis == .horizontal {
+                                       abs(( length - 30 ) / 3)
+                                    } else { 10 }
+                                })
                         }
                         .cornerRadius(10)
                         .giveShadow(color: .gray, radius: 4, x: 2.0, y: 2.0)
