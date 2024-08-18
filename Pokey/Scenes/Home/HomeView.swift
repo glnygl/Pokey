@@ -26,7 +26,6 @@ struct HomeView: View {
                                 PokeyView(pokey: pokey)
                                     .containerRelativeFrame(.horizontal, { width, _ in
                                        ( width - 30 ) / 3
-                                        
                                     })
                                     .frame(height: 180)
                                     .background(Color.background)
