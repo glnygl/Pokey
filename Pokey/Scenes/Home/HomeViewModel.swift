@@ -16,7 +16,7 @@ final class HomeViewModel {
         let request = DiscoverRequest()
         let manager = NetworkManager()
         let pokeyList = try await manager.performRequest(type: PokeyList.self, with: request.asURLRequest())
-        pokeys = pokeyList.data?[length: 13] ?? []
+        pokeys = pokeyList.data?[length: 12] ?? []
     }
 }
 

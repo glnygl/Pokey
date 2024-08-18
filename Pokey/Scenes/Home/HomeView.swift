@@ -18,21 +18,27 @@ struct HomeView: View {
     ]
     
     var body: some View {
-        GeometryReader { geometry in
             ScrollView(showsIndicators: false) {
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(viewModel.pokeys) { pokey in
                         ZStack() {
                             VStack(spacing: 0) {
                                 PokeyView(pokey: pokey)
-                                    .frame(width: (geometry.size.width - 30) / 3 , height: 180)
+                                    .containerRelativeFrame(.horizontal, { width, _ in
+                                       ( width - 30 ) / 3
+                                        
+                                    })
+                                    .frame(height: 180)
                                     .background(Color.background)
                                     .onTapGesture {
                                         coordinator.push(page: .detail(pokey: pokey))
                                     }
                                 Rectangle()
                                     .fill(.accent)
-                                    .frame(width: (geometry.size.width - 30) / 3 , height: 10)
+                                    .containerRelativeFrame(.horizontal, { width, _ in
+                                        (width - 30) / 3
+                                    })
+                                    .frame(height: 10)
                             }
                             .cornerRadius(10)
                             .giveShadow(color: .gray, radius: 4, x: 2.0, y: 2.0)
@@ -52,7 +58,6 @@ struct HomeView: View {
                     }
                 }
             }
-        }
     }
 }
 
