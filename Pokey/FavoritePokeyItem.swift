@@ -10,13 +10,13 @@ import SwiftData
 @Model
 class FavoritePokeyItem {
     var id: Int?
-    let name: String?
-    let img: String?
-    let type: [String]?
-    let weaknesses: [String]?
-    let height: String?
-    let weight: String?
-    let candy: Int?
+    var name: String?
+    var img: String?
+    var type: [String]?
+    var weaknesses: [String]?
+    var height: String?
+    var weight: String?
+    var candy: Int?
     
     init(id: Int?, name: String?, img: String?, type: [String]?, weaknesses: [String]?, height: String?, weight: String?, candy: Int?) {
         self.id = id
