@@ -54,6 +54,8 @@
 		29A312432C64F52E00BE0918 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA942C530471007B6A79 /* RoundedCorner.swift */; };
 		29A3124D2C6A467B00BE0918 /* FavoritePokeyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FE2C4EA7ED007B6A79 /* FavoritePokeyItem.swift */; };
 		29A3124F2C6AA63300BE0918 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3124E2C6AA63300BE0918 /* DetailViewModel.swift */; };
+		29AD5C1F2C9B78140030D72B /* EnviromentValuesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AD5C1E2C9B78140030D72B /* EnviromentValuesExtensions.swift */; };
+		29AD5C202C9B78140030D72B /* EnviromentValuesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AD5C1E2C9B78140030D72B /* EnviromentValuesExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,7 @@
 		291EDAA82C63AFEE007B6A79 /* iOSConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSConnector.swift; sourceTree = "<group>"; };
 		291EDABB2C63BFFD007B6A79 /* PokeyWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PokeyWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		29A3124E2C6AA63300BE0918 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		29AD5C1E2C9B78140030D72B /* EnviromentValuesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentValuesExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +320,7 @@
 				291EDA8A2C518B7A007B6A79 /* DictionaryExtensions.swift */,
 				291EDA8C2C518F89007B6A79 /* EncodableExtensions.swift */,
 				291EDA8E2C529942007B6A79 /* ViewExtensions.swift */,
+				29AD5C1E2C9B78140030D72B /* EnviromentValuesExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -533,6 +537,7 @@
 				291EDAA72C63A2C8007B6A79 /* WatchConnector.swift in Sources */,
 				291EDA8F2C529942007B6A79 /* ViewExtensions.swift in Sources */,
 				291EDA792C4FFA57007B6A79 /* PokeyView.swift in Sources */,
+				29AD5C202C9B78140030D72B /* EnviromentValuesExtensions.swift in Sources */,
 				291EDA692C4EABE1007B6A79 /* DetailView.swift in Sources */,
 				291EDA672C4EABCA007B6A79 /* HomeView.swift in Sources */,
 				291EDA5F2C4EAB70007B6A79 /* HomeCoordinatorView.swift in Sources */,
@@ -563,6 +568,7 @@
 				29A312432C64F52E00BE0918 /* RoundedCorner.swift in Sources */,
 				291EDAB92C63BF81007B6A79 /* ViewExtensions.swift in Sources */,
 				291EDAB72C63B553007B6A79 /* ViewModifiers.swift in Sources */,
+				29AD5C1F2C9B78140030D72B /* EnviromentValuesExtensions.swift in Sources */,
 				291EDAB32C63B2F1007B6A79 /* EncodableExtensions.swift in Sources */,
 				291EDAB22C63B2D3007B6A79 /* ArrayExtensions.swift in Sources */,
 				291EDAAE2C63B13E007B6A79 /* DictionaryExtensions.swift in Sources */,

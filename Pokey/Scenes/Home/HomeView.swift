@@ -34,6 +34,7 @@ struct HomeView: View {
                                     .onTapGesture {
                                         coordinator.push(page: .detail(pokey: pokey))
                                     }
+                                    .environment(\.fontSize, .subheadline)
                                 Rectangle()
                                     .fill(.accent)
                                     .containerRelativeFrame([.horizontal, .vertical], {
