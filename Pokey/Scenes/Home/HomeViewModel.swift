@@ -11,10 +11,14 @@ import Foundation
 final class HomeViewModel {
     
     var pokeys: [Pokey] = []
+    var manager: NetworkService
+    
+    init(manager: NetworkService = NetworkManager()) {
+        self.manager = manager
+    }
     
     func fetchPokeyList() async throws {
         let request = DiscoverRequest()
-        let manager = NetworkManager()
         let pokeyList = try await manager.performRequest(type: PokeyList.self, with: request.asURLRequest())
         pokeys = pokeyList.data?[length: 12] ?? []
     }
