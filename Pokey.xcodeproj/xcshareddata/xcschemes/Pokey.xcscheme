@@ -52,6 +52,17 @@
                ReferencedContainer = "container:Pokey.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "291BD20A2C9AEB21004EFCA6"
+               BuildableName = "PokeyUnitTests.xctest"
+               BlueprintName = "PokeyUnitTests"
+               ReferencedContainer = "container:Pokey.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
