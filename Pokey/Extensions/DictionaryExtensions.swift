@@ -10,11 +10,12 @@ import Foundation
 extension Dictionary {
     
     func queryString() -> String {
-        let queryString = "?"
-        let mappedString = self.compactMap({ key, value in
+        if self.isEmpty { return "" }
+        let mappedString = self
+            .compactMap({ key, value in
             "\(key)=\(value)"
         }).joined(separator: "&")
-        return  queryString + mappedString
+        return  "?" + mappedString
     }
     
 }
