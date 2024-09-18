@@ -3,6 +3,7 @@
 ## Requirements
 - iOS 17.4+
 - WatchOS 10.4+
+- Xcode 16+
 
 ## Architecture
 - MVVM
