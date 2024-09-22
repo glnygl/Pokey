@@ -480,6 +480,9 @@
 				Base,
 			);
 			mainGroup = 291ED9EE2C4EA7ED007B6A79;
+			packageReferences = (
+				296C1EDF2CA0995A00E1A572 /* XCRemoteSwiftPackageReference "swift-testing" */,
+			);
 			productRefGroup = 291ED9F82C4EA7ED007B6A79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -940,6 +943,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		296C1EDF2CA0995A00E1A572 /* XCRemoteSwiftPackageReference "swift-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftlang/swift-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.99.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 291ED9EF2C4EA7ED007B6A79 /* Project object */;
 }

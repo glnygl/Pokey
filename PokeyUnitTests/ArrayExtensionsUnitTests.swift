@@ -6,7 +6,34 @@
 //
 
 import XCTest
+import Testing
 @testable import Pokey
+
+struct ArrayExtensionsSwiftTestingUnitTests {
+    
+    @Test("Subscript, array is empty")
+    func subscript_arrayEmpty() {
+        
+        let array: [String] = []
+        let lenght = 2
+        
+        let result = array[length: lenght]
+        
+        #expect(result == [])
+    }
+    
+    @Test("Subscript, lenght is zero")
+    func subscript_lenghtZero() {
+        
+        let array: [String] = ["a", "b", "c", "d"]
+        let lenght = 0
+        
+        let result = array[length: lenght]
+        
+        #expect(result == [])
+    }
+}
+
 
 final class ArrayExtensionsUnitTests: XCTestCase {
 
@@ -16,26 +43,6 @@ final class ArrayExtensionsUnitTests: XCTestCase {
     
     override func tearDown() {
         super.tearDown()
-    }
-    
-    func test_subscript_arrayEmpty(){
-        
-        let array: [String] = []
-        let lenght = 2
-        
-        let result = array[length: lenght]
-        
-        XCTAssertEqual(result, [])
-    }
-    
-    func test_subscript_lenghtZero(){
-        
-        let array: [String] = ["a", "b", "c", "d"]
-        let lenght = 0
-        
-        let result = array[length: lenght]
-        
-        XCTAssertEqual(result, [])
     }
     
     
