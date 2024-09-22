@@ -3,7 +3,7 @@
 ## Requirements
 - iOS 17.0+
 - WatchOS 10.4+
-- Xcode 16+ (@Entry & @Test macros)
+- Xcode 16+ 
 
 ## Architecture
 - MVVM
@@ -14,8 +14,8 @@
 
 ## Keywords
 - Swift
-- SwiftUI
+- SwiftUI (@Enrty)
 - RestAPI
-- SwiftData
-- SwiftTesting
+- SwiftData (@Model)
+- SwiftTesting (@Test)
 - MVVM & MVVM-C 
