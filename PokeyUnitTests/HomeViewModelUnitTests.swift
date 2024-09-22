@@ -6,7 +6,45 @@
 //
 
 import XCTest
+import Testing
 @testable import Pokey
+
+// .serialized 
+@Suite("Home View Model SwiftTesting")
+struct HomeViewModelSwiftTesting {
+    
+    let manager = MockNetworkManager()
+    
+    @Test func fetchData_succesful() async {
+        
+        manager.shouldThrowError = false
+        let viewModel = HomeViewModel(manager: manager)
+        
+        do {
+            try await viewModel.fetchPokeyList()
+        } catch {
+            #expect(error == nil)
+        }
+        
+        #expect(viewModel.pokeys.count > 0)
+        
+    }
+    
+    @Test func fetchData_fail() async {
+        
+        manager.shouldThrowError = true
+        let viewModel = HomeViewModel(manager: manager)
+        
+        do {
+            try await viewModel.fetchPokeyList()
+        } catch {
+            #expect(error != nil)
+        }
+        
+        #expect(viewModel.pokeys.count == 0)
+    }
+}
+
 
 final class HomeViewModelUnitTests: XCTestCase {
     
@@ -53,6 +91,4 @@ final class HomeViewModelUnitTests: XCTestCase {
         XCTAssertEqual(viewModel.pokeys.count, 0)
         
     }
-    
-
 }
