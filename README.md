@@ -17,4 +17,5 @@
 - SwiftUI
 - RestAPI
 - SwiftData
+- SwiftTesting
 - MVVM & MVVM-C 
