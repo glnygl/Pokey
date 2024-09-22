@@ -81,24 +81,25 @@ extension BaseRequest {
     }
 }
 
-protocol NetworkService {
+protocol NetworkServiceProtocol {
     var session: URLSession { get }
     func performRequest<T: Codable>(
           type: T.Type,
-          with request: URLRequest) async throws -> T
+          with request: BaseRequest) async throws -> T
 }
 
-extension NetworkService {
+extension NetworkServiceProtocol {
     var session: URLSession {
         URLSession.shared
     }
 }
 
 
-class NetworkManager: NetworkService {
+class NetworkManager: NetworkServiceProtocol {
     
-    func performRequest<T>(type: T.Type, with request: URLRequest) async throws -> T where T : Decodable {
-        let (data, response) = try await session.data(for: request)
+    func performRequest<T>(type: T.Type, with request: BaseRequest) async throws -> T where T : Decodable {
+        let req = try request.asURLRequest()
+        let (data, response) = try await session.data(for: req)
          guard let httpResponse = response as? HTTPURLResponse else {
              throw CustomError.requestFailed
          }

@@ -51,6 +51,10 @@
 		291EDAB32C63B2F1007B6A79 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8C2C518F89007B6A79 /* EncodableExtensions.swift */; };
 		291EDAB72C63B553007B6A79 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA762C4FF2ED007B6A79 /* ViewModifiers.swift */; };
 		291EDAB92C63BF81007B6A79 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA8E2C529942007B6A79 /* ViewExtensions.swift */; };
+		296C1EE12CA0A89600E1A572 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C1EE02CA0A89600E1A572 /* Mockable.swift */; };
+		296C1EE62CA0AA2800E1A572 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C1EE52CA0AA2800E1A572 /* MockNetworkManager.swift */; };
+		296C1EE92CA0ABFA00E1A572 /* DiscoverMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 296C1EE72CA0ABFA00E1A572 /* DiscoverMockData.json */; };
+		296C1EEB2CA0AD8A00E1A572 /* HomeViewModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C1EEA2CA0AD8A00E1A572 /* HomeViewModelUnitTests.swift */; };
 		29A312432C64F52E00BE0918 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291EDA942C530471007B6A79 /* RoundedCorner.swift */; };
 		29A3124D2C6A467B00BE0918 /* FavoritePokeyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291ED9FE2C4EA7ED007B6A79 /* FavoritePokeyItem.swift */; };
 		29A3124F2C6AA63300BE0918 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3124E2C6AA63300BE0918 /* DetailViewModel.swift */; };
@@ -130,6 +134,10 @@
 		291EDAA62C63A2C8007B6A79 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
 		291EDAA82C63AFEE007B6A79 /* iOSConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSConnector.swift; sourceTree = "<group>"; };
 		291EDABB2C63BFFD007B6A79 /* PokeyWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PokeyWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		296C1EE02CA0A89600E1A572 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		296C1EE52CA0AA2800E1A572 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		296C1EE82CA0ABFA00E1A572 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/DiscoverMockData.json; sourceTree = "<group>"; };
+		296C1EEA2CA0AD8A00E1A572 /* HomeViewModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelUnitTests.swift; sourceTree = "<group>"; };
 		29A3124E2C6AA63300BE0918 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		29AD5C1E2C9B78140030D72B /* EnviromentValuesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentValuesExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,8 +170,12 @@
 		291BD20C2C9AEB21004EFCA6 /* PokeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				296C1EE02CA0A89600E1A572 /* Mockable.swift */,
 				291BD2142C9AEB71004EFCA6 /* ArrayExtensionsUnitTests.swift */,
 				291BD2162C9AEF9B004EFCA6 /* DictionaryExtensionsUnitTests.swift */,
+				296C1EE52CA0AA2800E1A572 /* MockNetworkManager.swift */,
+				296C1EEA2CA0AD8A00E1A572 /* HomeViewModelUnitTests.swift */,
+				296C1EE72CA0ABFA00E1A572 /* DiscoverMockData.json */,
 			);
 			path = PokeyUnitTests;
 			sourceTree = "<group>";
@@ -499,6 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296C1EE92CA0ABFA00E1A572 /* DiscoverMockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +541,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				291BD2152C9AEB71004EFCA6 /* ArrayExtensionsUnitTests.swift in Sources */,
+				296C1EE12CA0A89600E1A572 /* Mockable.swift in Sources */,
+				296C1EE62CA0AA2800E1A572 /* MockNetworkManager.swift in Sources */,
+				296C1EEB2CA0AD8A00E1A572 /* HomeViewModelUnitTests.swift in Sources */,
 				291BD2172C9AEF9B004EFCA6 /* DictionaryExtensionsUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +618,17 @@
 			targetProxy = 291EDA4C2C4EA980007B6A79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		296C1EE72CA0ABFA00E1A572 /* DiscoverMockData.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				296C1EE82CA0ABFA00E1A572 /* en */,
+			);
+			name = DiscoverMockData.json;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		291BD2112C9AEB21004EFCA6 /* Debug */ = {

@@ -9,6 +9,7 @@ import XCTest
 import Testing
 @testable import Pokey
 
+@Suite("Array Extensions Swift Testing")
 struct ArrayExtensionsSwiftTestingUnitTests {
     
     @Test("Subscript, array is empty")
