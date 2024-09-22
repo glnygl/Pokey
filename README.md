@@ -1,7 +1,7 @@
 ## Pokey
 
 ## Requirements
-- iOS 17.4+
+- iOS 17.0+
 - WatchOS 10.4+
 - Xcode 16+ (@Entry & @Test macros)
 
