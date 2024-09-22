@@ -19,9 +19,9 @@ final class HomeViewModelUnitTests: XCTestCase {
     }
     
     override func tearDown() {
-        super.tearDown()
         viewModel = nil
         manager = nil
+        super.tearDown()
     }
     
     func test_fetchData_succesful() async {
