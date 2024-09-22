@@ -3,7 +3,7 @@
 ## Requirements
 - iOS 17.4+
 - WatchOS 10.4+
-- Xcode 16+
+- Xcode 16+ (@Entry & @Test macros)
 
 ## Architecture
 - MVVM
