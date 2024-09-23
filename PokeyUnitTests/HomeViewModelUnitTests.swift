@@ -9,13 +9,14 @@ import XCTest
 import Testing
 @testable import Pokey
 
-// .serialized 
+// @Suite(.serialized)
 @Suite("Home View Model SwiftTesting")
 struct HomeViewModelSwiftTesting {
     
     let manager = MockNetworkManager()
     
-    @Test func fetchData_succesful() async {
+    @Test(.tags(.apiSuccess))
+    func fetchData_succesful() async {
         
         manager.shouldThrowError = false
         let viewModel = HomeViewModel(manager: manager)
@@ -30,7 +31,8 @@ struct HomeViewModelSwiftTesting {
         
     }
     
-    @Test func fetchData_fail() async {
+    @Test(.tags(.apiFail))
+    func fetchData_fail() async {
         
         manager.shouldThrowError = true
         let viewModel = HomeViewModel(manager: manager)
