@@ -9,7 +9,9 @@ import XCTest
 import Testing
 @testable import Pokey
 
-@Suite("Array Extensions Swift Testing")
+// MARK: Swift Testing
+
+@Suite(.serialized) 
 struct ArrayExtensionsSwiftTestingUnitTests {
     
     @Test("Subscript, array is empty")
@@ -35,6 +37,7 @@ struct ArrayExtensionsSwiftTestingUnitTests {
     }
 }
 
+// MARK: XCTest
 
 final class ArrayExtensionsUnitTests: XCTestCase {
 

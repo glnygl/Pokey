@@ -9,7 +9,8 @@ import XCTest
 import Testing
 @testable import Pokey
 
-// @Suite(.serialized)
+// MARK: Swift Testing
+
 @Suite("Home View Model SwiftTesting")
 struct HomeViewModelSwiftTesting {
     
@@ -47,6 +48,7 @@ struct HomeViewModelSwiftTesting {
     }
 }
 
+// MARK: XCTest
 
 final class HomeViewModelUnitTests: XCTestCase {
     
