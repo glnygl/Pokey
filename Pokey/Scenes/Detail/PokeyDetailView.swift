@@ -32,7 +32,13 @@ struct PokeyDetailView: View {
                 Rectangle().fill(.accent)
                     .frame(width: geometry.size.width, height: 20)
                     .padding(.bottom)
+                VStack(spacing: 12) {
+                    TypeContainerView(types: pokey?.type ?? [], title: "Type")
+                    TypeContainerView(types: pokey?.weaknesses ?? [], title: "Weaknesses")
+                }
             }
         }
+        .navigationTitle(pokey?.name ?? "")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
