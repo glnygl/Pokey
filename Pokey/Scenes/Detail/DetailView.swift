@@ -17,8 +17,10 @@ struct DetailView: View {
     var pokey: Pokey?
     
     var body: some View {
-        Text(pokey?.name ?? "")
-            .toolbar {
+        
+        VStack {
+            PokeyDetailView(pokey: pokey)
+        }.toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("", systemImage: viewModel.isFavorite ? "heart.fill" : "heart") {
                         guard let pokeyItem = pokey?.convertPokeyItem() else { return }

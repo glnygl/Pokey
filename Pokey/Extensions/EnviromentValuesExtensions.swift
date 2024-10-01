@@ -9,6 +9,6 @@ import SwiftUICore
 
 // @Entry Macro
 extension EnvironmentValues {
-    @Entry var fontSize: Font = .title
+    @Entry var fontSize: Font = .subheadline
 }
 
