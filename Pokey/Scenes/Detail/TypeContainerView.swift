@@ -23,7 +23,7 @@ struct TypeContainerView: View {
                 let pokeyType = PokeyType(rawValue: type)
                 ZStack {
                     Text(type)
-                        .foregroundColor(.white)
+                        .foregroundStyle(.white)
                 }
                 .padding(10)
                 .background(pokeyType?.typeColor ?? Color.white)
